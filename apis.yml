@@ -1,7 +1,25 @@
 aid: logicloop
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/logicloop.png
 name: LogicLoop
-description: 'LogicLoop is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'LogicLoop was a low-code / no-code operations-automation platform that let non-engineering
+  teams write SQL-based business rules on top of their company data to trigger alerts, reviews, and
+  automated actions for use cases like fraud and risk monitoring, logistics, and customer onboarding.
+  Founded in 2021 by Jesika Haria and Jackie Xu, it raised roughly $4.5M from Accel and First Round
+  Capital, offered an AI SQL Copilot (plain-English-to-SQL) and a REST API for managing rules,
+  schedules, notifications, and embedded dashboards. LogicLoop was acquired by Hummingbird (risk and
+  compliance) on 2024-09-18; its website (www.logicloop.com), docs (docs.logicloop.com), and API hosts
+  no longer resolve, so no live API surface remains to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/logicloop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +27,34 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-detail: 'Domain logicloop.com is registered (expiry 2030) but publishes no DNS records; all
+  hosts (www, docs, api, app) fail to resolve as of 2026-07-20. Company acquired by Hummingbird.'
+x-acquired-by: hummingbird
+x-acquired-date: '2024-09-18'
+x-founders:
+- Jesika Haria
+- Jackie Xu
+x-founded: '2021'
+x-historical-surface:
+- type: DeveloperDocumentation
+  url: https://docs.logicloop.com/
+  note: offline as of 2026-07-20 (DNS does not resolve)
+- type: APIReference
+  url: https://docs.logicloop.com/
+  note: historical REST API (rules, schedules, notifications, embedded dashboards); host offline
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- No-Code
+- Automation
+- Business Rules
+- Operations
+- Fraud Detection
+- Data
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +64,8 @@ maintainers:
 common:
 - type: Website
   url: https://www.logicloop.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
